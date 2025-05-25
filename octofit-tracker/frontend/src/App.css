@@ -1,0 +1,309 @@
+/* OctoFit Tracker - Ocean-themed Fitness App Styles */
+
+/* Root Variables for Consistent Theming */
+:root {
+  --primary-blue: #0066cc;
+  --secondary-blue: #004499;
+  --accent-teal: #20b2aa;
+  --ocean-green: #008b8b;
+  --light-blue: #87ceeb;
+  --deep-blue: #191970;
+  --coral: #ff7f50;
+  --sand: #f4e4bc;
+  --white: #ffffff;
+  --light-gray: #f8f9fa;
+  --medium-gray: #6c757d;
+  --dark-gray: #343a40;
+  --success-green: #28a745;
+  --warning-orange: #fd7e14;
+  --danger-red: #dc3545;
+}
+
+/* Global Body Styling */
+body {
+  background: linear-gradient(135deg, var(--light-blue) 0%, var(--primary-blue) 100%);
+  min-height: 100vh;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  color: var(--dark-gray);
+}
+
+/* App Container */
+.App {
+  min-height: 100vh;
+  background: transparent;
+}
+
+/* Logo Styling */
+.octofit-logo {
+  height: 40px;
+  width: auto;
+  margin-right: 10px;
+  filter: drop-shadow(2px 2px 4px rgba(0, 0, 0, 0.2));
+}
+
+/* Navigation Styling */
+.navbar {
+  background: linear-gradient(45deg, var(--deep-blue), var(--primary-blue)) !important;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  border-bottom: 3px solid var(--accent-teal);
+}
+
+.navbar-brand {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--white) !important;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  display: flex;
+  align-items: center;
+}
+
+.navbar-nav .nav-link {
+  color: var(--light-blue) !important;
+  font-weight: 500;
+  transition: all 0.3s ease;
+  padding: 0.5rem 1rem !important;
+  border-radius: 20px;
+  margin: 0 0.2rem;
+}
+
+.navbar-nav .nav-link:hover {
+  color: var(--white) !important;
+  background-color: rgba(255, 255, 255, 0.1);
+  transform: translateY(-2px);
+}
+
+/* Button Styling */
+.btn-primary {
+  background: linear-gradient(45deg, var(--primary-blue), var(--accent-teal));
+  border: none;
+  border-radius: 25px;
+  padding: 0.75rem 2rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+  box-shadow: 0 4px 15px rgba(0, 102, 204, 0.3);
+}
+
+.btn-primary:hover {
+  background: linear-gradient(45deg, var(--secondary-blue), var(--ocean-green));
+  transform: translateY(-2px);
+  box-shadow: 0 6px 20px rgba(0, 102, 204, 0.4);
+}
+
+.btn-outline-primary {
+  color: var(--primary-blue);
+  border: 2px solid var(--primary-blue);
+  border-radius: 25px;
+  padding: 0.75rem 2rem;
+  font-weight: 600;
+  transition: all 0.3s ease;
+}
+
+.btn-outline-primary:hover {
+  background: var(--primary-blue);
+  color: var(--white);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0, 102, 204, 0.3);
+}
+
+/* Card Styling */
+.card {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  background: var(--white);
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 35px rgba(0, 0, 0, 0.15);
+}
+
+.card-header {
+  background: linear-gradient(45deg, var(--accent-teal), var(--ocean-green));
+  color: var(--white);
+  font-weight: bold;
+  border: none;
+  padding: 1rem 1.5rem;
+}
+
+.card-body {
+  padding: 1.5rem;
+}
+
+.card-title {
+  color: var(--deep-blue);
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+/* Table Styling */
+.table {
+  background: var(--white);
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.table thead th {
+  background: linear-gradient(45deg, var(--primary-blue), var(--accent-teal));
+  color: var(--white);
+  border: none;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+  padding: 1rem;
+}
+
+.table tbody tr {
+  transition: all 0.3s ease;
+}
+
+.table tbody tr:hover {
+  background-color: rgba(32, 178, 170, 0.1);
+  transform: scale(1.01);
+}
+
+.table tbody td {
+  padding: 1rem;
+  border-color: rgba(32, 178, 170, 0.2);
+  vertical-align: middle;
+}
+
+/* Heading Styling */
+h1, h2, h3, h4, h5, h6 {
+  color: var(--deep-blue);
+  font-weight: bold;
+}
+
+.display-4 {
+  background: linear-gradient(45deg, var(--deep-blue), var(--primary-blue));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+  text-shadow: none;
+}
+
+/* Main Content Styling */
+main {
+  background: rgba(255, 255, 255, 0.95);
+  min-height: calc(100vh - 200px);
+  border-radius: 20px 20px 0 0;
+  margin-top: 2rem;
+  padding: 2rem 0;
+  box-shadow: 0 -5px 20px rgba(0, 0, 0, 0.1);
+}
+
+/* Container Styling */
+.container {
+  max-width: 1200px;
+}
+
+/* Badge Styling */
+.badge {
+  border-radius: 20px;
+  padding: 0.5rem 1rem;
+  font-size: 0.85rem;
+}
+
+.badge-primary {
+  background: linear-gradient(45deg, var(--primary-blue), var(--accent-teal));
+}
+
+.badge-success {
+  background: linear-gradient(45deg, var(--success-green), var(--ocean-green));
+}
+
+.badge-warning {
+  background: linear-gradient(45deg, var(--warning-orange), var(--coral));
+}
+
+/* Footer Styling */
+footer {
+  background: linear-gradient(45deg, var(--deep-blue), var(--secondary-blue));
+  color: var(--light-blue);
+  margin-top: 3rem;
+  border-top: 3px solid var(--accent-teal);
+}
+
+footer p {
+  margin: 0;
+  font-weight: 500;
+}
+
+/* Link Styling */
+a {
+  color: var(--primary-blue);
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+a:hover {
+  color: var(--accent-teal);
+  text-decoration: underline;
+}
+
+/* Loading and Alert Styling */
+.alert {
+  border: none;
+  border-radius: 10px;
+  padding: 1rem 1.5rem;
+  margin: 1rem 0;
+}
+
+.alert-info {
+  background: linear-gradient(45deg, var(--light-blue), rgba(135, 206, 235, 0.3));
+  color: var(--deep-blue);
+  border-left: 4px solid var(--primary-blue);
+}
+
+.alert-danger {
+  background: linear-gradient(45deg, rgba(220, 53, 69, 0.1), rgba(255, 127, 80, 0.1));
+  color: var(--danger-red);
+  border-left: 4px solid var(--danger-red);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .navbar-brand {
+    font-size: 1.2rem;
+  }
+  
+  .octofit-logo {
+    height: 30px;
+  }
+  
+  main {
+    margin-top: 1rem;
+    border-radius: 15px 15px 0 0;
+  }
+  
+  .btn {
+    padding: 0.5rem 1.5rem;
+    font-size: 0.9rem;
+  }
+}
+
+/* Animation for smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--light-gray);
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(45deg, var(--primary-blue), var(--accent-teal));
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(45deg, var(--secondary-blue), var(--ocean-green));
+}
