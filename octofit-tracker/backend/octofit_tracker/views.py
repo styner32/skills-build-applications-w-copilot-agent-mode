@@ -10,8 +10,8 @@ def api_root(request, format=None):
     if request.method == 'POST':
         return Response({"message": "POST request received"}, status=status.HTTP_201_CREATED)
 
-    # Get the current request's host for dynamic URL generation
-    base_url = request.build_absolute_uri('/').rstrip('/')
+    # Use codespace URL for API endpoints
+    base_url = 'https://glowing-dollop-7p644jpq6hqqq-8000.app.github.dev'
     return Response({
         'users': base_url + '/api/users/?format=api',
         'teams': base_url + '/api/teams/?format=api',
